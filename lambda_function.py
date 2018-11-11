@@ -8,6 +8,7 @@ FILE_NAME = 'contact_info.csv'
 
 def lambda_handler(event, context):
     eligible_persons = []
+
     with open(FILE_NAME, 'r') as f:
         csv_dictreader = csv.DictReader(f)
         for r in csv_dictreader:
@@ -17,7 +18,7 @@ def lambda_handler(event, context):
                 eligible_persons.append(r.get('Person'))
     print(eligible_persons)
 
-    eligible_persons = (',').join(eligible_persons)
+    eligible_persons = ','.join(eligible_persons)
     ret_val = send_mail(eligible_persons)
     status_body = 'Successfully sent the mail' if ret_val else 'Some shit!'
     return {

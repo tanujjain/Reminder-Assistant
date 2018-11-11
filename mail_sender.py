@@ -7,7 +7,7 @@ def send_mail(eligible_persons):
     user = os.environ['sendermail']  # from email
     passwd = os.environ['senderpassword']
 
-    to = os.environ['receiveremail']  ## to address
+    to = os.environ['receiveremail']  # to address
     body = eligible_persons
 
     smtp_server = 'smtp.yandex.com'
