@@ -1,6 +1,6 @@
 # Lambda Reminder
 
-A simple[AWS lambda](https://aws.amazon.com/lambda/)application to send periodic reminders via email.
+A simple [AWS lambda](https://aws.amazon.com/lambda/) application to send periodic reminders via email.
 
 This application sends you a mail on a fixed day/time every week giving a list of people you should call
 up to stay in touch. The preset frequency for each person in the csv file 'contact_info.csv' is used to
@@ -22,7 +22,7 @@ Determines if a certain person is eligible to contacted this week.
 
 ## Setting the schedule
 A periodic rule can be created using AWS Lambda that triggers the lambda_function.py at a fixed
-period. Info regarding the same can be found[here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html).
+period. Info regarding the same can be found [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/RunLambdaSchedule.html).
 
 # Requirements
 ```
