@@ -18,7 +18,7 @@ by row to determine whether a person is eligible to be contacted in the current 
 Sends a mail to the user from another preconfigured email address by utilizing SMTP mailing.
 
 ## validation.py
-Determines if a certain person is eligible to contacted this week.
+Determines if a certain person is eligible to be contacted this week.
 
 ## Setting the schedule
 A periodic rule can be created using AWS Lambda that triggers the lambda_function.py at a fixed
